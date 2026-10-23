@@ -1,0 +1,11 @@
+[build]
+  publish = "01_MARY_TRIADA"
+
+# This repository is a static, offline prototype. It does not include a backend.
+# Keep search indexing disabled until the owner explicitly approves public exposure.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"
